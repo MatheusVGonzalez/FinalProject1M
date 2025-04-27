@@ -74,15 +74,49 @@ main {
     height: auto;
 }
 
-.footer {
-    position: absolute;
+footer {
+    position: -webkit-sticky;
+    position: sticky;
     bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background: white;
-    color: black;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #1f1f1f;
+    color: white;
     text-align: center;
-    padding: 10px;
+    padding: 1%;
+    min-height: 70px;
+    top: 0;
+    background-color: black;
+    z-index: 100;
+    display: flex;
+    padding: 10px 20px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
 }
+
+footer a {
+    color: white;
+    margin-left: 50px;
+    font-size: 17px;
+    padding-top: 15px;
+    text-align: center;
+
+}
+
+h2 {
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding-left: 100px;
+    padding-top: 70px;
+    font-size: 40px;
+}
+
+.button {
+    display: inline-block;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-top: 10px;
+    margin-left: 100px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 15px 30px;
+    border: 10px;
+}
+
