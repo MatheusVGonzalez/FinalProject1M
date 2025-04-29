@@ -11,7 +11,7 @@ nav {
     min-height: 50px;
     background: white;
     color: black;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     
 }
 
@@ -67,12 +67,13 @@ nav > a {
     object-fit: cover;
 }
 
-.BuildNames > p{
-    display: flex;
+.BuildNames > p, .BuildNames > h2 {
     float: right;
     clear: left;
     width: 35%;
     font-size: 20px;
+    color: black;
+    z-index: 3;
 }
 
 
@@ -108,7 +109,7 @@ footer {
     z-index: 100;
     display: flex;
     padding: 10px 20px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 }
 
@@ -127,7 +128,7 @@ section h2{
 
 h2 {
     color: white;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     padding-top: 70px;
     font-size: 40px;
     text-align: center;
@@ -135,7 +136,7 @@ h2 {
 
 .button {
     display: inline-block;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin-top: 10px;
     margin-left: 100px;
     background-color: rgb(255, 255, 255);
@@ -154,7 +155,7 @@ h2 {
 
 .spec {
     text-align: center;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .spec .label {
@@ -171,4 +172,101 @@ h2 {
 .spec .unit {
     font-size: 14px;
     color: #555;
+}
+
+
+.image-slider {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-slider input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 1975px;               
+    width: calc(300% + 60px);
+}
+
+.slide {
+    width: 35%;             
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 15px;
+}
+.dot {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.text-index{
+    padding-top: 15px;
+    font-size: 15px;
+font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+input#slide1:checked ~ .slides {
+    transform: translateX(0%);
+}
+input#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+input#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+input#slide4:checked ~ .slides {
+    transform: translateX(-300%);
+}
+input#slide5:checked ~ .slides {
+    transform: translateX(-400%);
+}
+
+.text-index .text {
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#slide1:checked ~ .text-index .text1,
+#slide2:checked ~ .text-index .text2,
+#slide3:checked ~ .text-index .text3,
+#slide4:checked ~ .text-index .text4,
+#slide5:checked ~ .text-index .text5 {
+    display: block;
+}
+
+input#slide1:checked ~ .dots label[for="slide1"],
+input#slide2:checked ~ .dots label[for="slide2"],
+input#slide3:checked ~ .dots label[for="slide3"],
+input#slide4:checked ~ .dots label[for="slide4"],
+input#slide5:checked ~ .dots label[for="slide5"] {
+    background-color: black;
 }
