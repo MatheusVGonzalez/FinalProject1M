@@ -199,7 +199,14 @@ font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 .slides2 {
     display: flex;
     transition: transform 0.5s ease;
-    gap: 197px;               
+    gap: 1975px;               
+    width: calc(300% + 60px);
+}
+
+.slides3 {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 1975px;               
     width: calc(300% + 60px);
 }
 
@@ -257,25 +264,54 @@ input#slide5:checked ~ .slides {
     transform: translateX(-400%);
 }
 
-input#slide6:checked ~ .slides {
-    transform: translateX(-500%);
+input#slide6:checked ~ .slides2 {
+    transform: translateX(0%);
 }
-input#slide7:checked ~ .slides {
-    transform: translateX(-600%);
+input#slide7:checked ~ .slides2 {
+    transform: translateX(-100%);
 }
-input#slide8:checked ~ .slides {
-    transform: translateX(-700%);
+input#slide8:checked ~ .slides2 {
+    transform: translateX(-200%);
 }
-input#slide9:checked ~ .slides {
-    transform: translateX(-800%);
+input#slide9:checked ~ .slides2 {
+    transform: translateX(-300%);
 }
-input#slide10:checked ~ .slides {
-    transform: translateX(-900%);
+input#slide10:checked ~ .slides2 {
+    transform: translateX(-400%);
+}
+
+
+input#slide11:checked ~ .slides3 {
+    transform: translateX(0%);
+}
+input#slide12:checked ~ .slides3 {
+    transform: translateX(-100%);
+}
+input#slide13:checked ~ .slides3 {
+    transform: translateX(-200%);
+}
+input#slide14:checked ~ .slides3 {
+    transform: translateX(-300%);
+}
+input#slide15:checked ~ .slides3 {
+    transform: translateX(-400%);
 }
 
 .text-index .text {
     display: none;
     transition: opacity 0.3s ease-in-out;
+}
+
+.audio-player {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.audio-player audio {
+    width: 40%;
+    max-width: 500px;
+    height: 45px;
+    outline: none;
 }
 
 #slide1:checked ~ .text-index .text1,
@@ -287,7 +323,12 @@ input#slide10:checked ~ .slides {
 #slide7:checked ~ .text-index .text7,
 #slide8:checked ~ .text-index .text8,
 #slide9:checked ~ .text-index .text9,
-#slide10:checked ~ .text-index .text10 {
+#slide10:checked ~ .text-index .text10,
+#slide11:checked ~ .text-index .text11,
+#slide12:checked ~ .text-index .text12,
+#slide13:checked ~ .text-index .text13,
+#slide14:checked ~ .text-index .text14,
+#slide15:checked ~ .text-index .text15 {
     opacity: 1;
     display: block;
 }
@@ -302,6 +343,11 @@ input#slide6:checked ~ .dots label[for="slide6"],
 input#slide7:checked ~ .dots label[for="slide7"],
 input#slide8:checked ~ .dots label[for="slide8"],
 input#slide9:checked ~ .dots label[for="slide9"],
-input#slide10:checked ~ .dots label[for="slide10"] {
+input#slide10:checked ~ .dots label[for="slide10"],
+input#slide11:checked ~ .dots label[for="slide11"],
+input#slide12:checked ~ .dots label[for="slide12"],
+input#slide13:checked ~ .dots label[for="slide13"],
+input#slide14:checked ~ .dots label[for="slide14"],
+input#slide15:checked ~ .dots label[for="slide15"] {
     background-color: black;
 }
