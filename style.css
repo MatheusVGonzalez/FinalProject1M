@@ -196,6 +196,13 @@ font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     width: calc(300% + 60px);
 }
 
+.slides2 {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 197px;               
+    width: calc(300% + 60px);
+}
+
 .slide {
     width: 35%;             
     flex-shrink: 0;
@@ -250,6 +257,22 @@ input#slide5:checked ~ .slides {
     transform: translateX(-400%);
 }
 
+input#slide6:checked ~ .slides {
+    transform: translateX(-500%);
+}
+input#slide7:checked ~ .slides {
+    transform: translateX(-600%);
+}
+input#slide8:checked ~ .slides {
+    transform: translateX(-700%);
+}
+input#slide9:checked ~ .slides {
+    transform: translateX(-800%);
+}
+input#slide10:checked ~ .slides {
+    transform: translateX(-900%);
+}
+
 .text-index .text {
     display: none;
     transition: opacity 0.3s ease-in-out;
@@ -259,14 +282,26 @@ input#slide5:checked ~ .slides {
 #slide2:checked ~ .text-index .text2,
 #slide3:checked ~ .text-index .text3,
 #slide4:checked ~ .text-index .text4,
-#slide5:checked ~ .text-index .text5 {
+#slide5:checked ~ .text-index .text5,
+#slide6:checked ~ .text-index .text6,
+#slide7:checked ~ .text-index .text7,
+#slide8:checked ~ .text-index .text8,
+#slide9:checked ~ .text-index .text9,
+#slide10:checked ~ .text-index .text10 {
+    opacity: 1;
     display: block;
 }
+
 
 input#slide1:checked ~ .dots label[for="slide1"],
 input#slide2:checked ~ .dots label[for="slide2"],
 input#slide3:checked ~ .dots label[for="slide3"],
 input#slide4:checked ~ .dots label[for="slide4"],
-input#slide5:checked ~ .dots label[for="slide5"] {
+input#slide5:checked ~ .dots label[for="slide5"],
+input#slide6:checked ~ .dots label[for="slide6"],
+input#slide7:checked ~ .dots label[for="slide7"],
+input#slide8:checked ~ .dots label[for="slide8"],
+input#slide9:checked ~ .dots label[for="slide9"],
+input#slide10:checked ~ .dots label[for="slide10"] {
     background-color: black;
 }
