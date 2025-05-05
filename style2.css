@@ -60,8 +60,6 @@ nav > a {
 }
 
 footer {
-    position: -webkit-sticky;
-    position: sticky;
     bottom: 0;
     background-color: #1f1f1f;
     color: white;
@@ -139,16 +137,6 @@ font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 
-.image-slider {
-    position: relative;
-    width: 90%;
-    max-width: 1000px;
-    height: auto;
-    margin: 40px auto;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
 .image-slider input {
     display: none;
 }
@@ -183,20 +171,18 @@ tbody{
 /*BuildPricePage*/
 
 .BuildColors {
-    display: flex;
-    align-items: flex-start;
-    gap: 40px;
+    display: block;
     margin-top: 40px;
-    margin-bottom: 200px;
-  }
-
+    margin-bottom: 40px;
+}
 
   
-.BuildPrice {
+  .BuildPrice {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
+    
 }
 
 .BuildNames {
@@ -204,7 +190,6 @@ tbody{
     flex-direction: row;
     justify-content: center;
     gap: 40px;
-    padding: 20px;
 }
     .trimline-section {
         font-family: 'Fira Sans', sans-serif;
@@ -235,6 +220,18 @@ tbody{
         color: #666;
     }
     .section-title {
+        font-size: 1.5rem;
+        font-weight: normal;
+        margin-bottom: 20px;
+        align-items: right;
+        text-align: left;
+    }
+    .step-wheels, .step-interior {
+        font-size: 0.9rem;
+        color: #666;
+        text-align: center;
+    }
+    .section-title-wheels, .section-title-interior {
         font-size: 1.5rem;
         font-weight: normal;
         margin-bottom: 20px;
@@ -323,6 +320,7 @@ tbody{
         width: 100%;
         height: auto;
         object-fit: cover;
+
     }
     
     input[name="slider"] {
@@ -378,26 +376,26 @@ tbody{
     }
 
     .fuel-consumption {
-        margin-top: 20px;
         font-size: 16px;
         color: #555;
-        justify-content: left;
-        text-align: left;
+        justify-content: center;
+        text-align: center;
     }
     
     .Fuel{
         margin-top: 20px;
         margin-bottom: 20px;
+        margin-left: 100px;
     }
 
-    .color-slider, .wheels-slider {
+    .color-slider, .wheels-slider, .interior-slider {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         margin-top: 40px;
       }
       
-      .color-selection, .wheels-selection {
+      .color-selection, .wheels-selection, .interior-selection {
         display: flex;
         gap: 40px;
         position: relative;
@@ -406,27 +404,30 @@ tbody{
       input[name="car-color"] {
         display: none;
       }
+
+      input[name="wheels"] {
+        display: none;
+      }
+      input[name="interior"] {
+        display: none;
+      }
       
       .car-images {
-        position: relative;
         width: 1000px;
-        height: 600px;
-        border-radius: 10px;
-        flex: 1;
-        max-width: 80%;
-            
-      }
+        margin-left: 0;
+    }
+    
+    
       
       .car-slide img {
-        position: relative;
-        width: 1000px;
-        height: 700px;
-        border-radius: 10px;
-        flex: 1;
-        padding-left: 0px;
-        margin-left: 0px;
-        align-items: left;
-      }
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        object-fit: cover;
+    }
+    
       
       .car-slide {
         position: absolute;
@@ -442,25 +443,13 @@ tbody{
       #color-silver:checked ~ .car-images #silver,
       #color-red:checked ~ .car-images #red,
       #color-daytona:checked ~ .car-images #daytona,
-      #color-blackCristal:checked ~ .car-images #blackCristal,
-      #wheels-1:checked ~ .wheels-images #wheels1,
-      #wheels-2:checked ~ .wheels-images #wheels2,
-      #wheels-3:checked ~ .wheels-images #wheels3,
-      #wheels-4:checked ~ .wheels-images #wheels4{
+      #color-blackCristal:checked ~ .car-images #blackCristal{
         display: block;
         opacity: 1;
         position: relative;
         z-index: 1;
       }
-      
-      .color-dot {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        cursor: pointer;
-        border: 2px solid #ccc;
-        transition: transform 0.2s;
-      }
+
       
       .color-dot:hover {
         transform: scale(1.1);
@@ -498,12 +487,8 @@ tbody{
         background-color: #1C1C1C;
       }
 
-      .BuildColors {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
-  margin-top: 40px;
-}
+
+    
 
 
 .car-slide {
@@ -519,23 +504,36 @@ input#color-red:checked ~ .car-images #red,
 input#color-daytona:checked ~ .car-images #daytona,
 input#color-blackCristal:checked ~ .car-images #blackCristal {
   display: block;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
 }
 
-.color-content, .wheels-content {
+.color-content {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: flex-end;
+  padding-left: 30px;
 }
 
-.color-buttons, .wheels-buttons {
+.wheels-content, .interior-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-left: 30px;
+  }
+
+.color-buttons, .wheels-buttons, .interior-buttons {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.color-option, .wheels-option {
+.color-option, .wheels-option, .interior-option {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -549,12 +547,17 @@ input#color-blackCristal:checked ~ .car-images #blackCristal {
   cursor: pointer;
 }
 
-.wheels-dot {
+.wheels-dot, .interior-dot {
     width: 20px;
     height: 20px;
+    background-color: #000;
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
+  }
+  
+  .wheels-dot:hover, .interior-dot:hover {
+    transform: scale(1.1);  
   }
   
 
@@ -569,7 +572,8 @@ input#color-blackCristal:checked ~ .car-images #blackCristal {
 .crytal { background-color: #1C1C1C; }
 
 
-.wheels-slide {
+
+.wheels-slide, .interior-slide {
     display: none;
     position: absolute;
     top: 0;
@@ -577,13 +581,41 @@ input#color-blackCristal:checked ~ .car-images #blackCristal {
     opacity: 0;
     transition: opacity 0.5s ease;
   }
-  
-  input#wheels-1:checked ~ .wheels-images #wheels1,
-  input#wheels-2:checked ~ .wheels-images #wheels2,
-  input#wheels-3:checked ~ .wheels-images #wheels3,
-  input#wheels-4:checked ~ .wheels-images #wheels4 {
-    display: block;
-    opacity: 1;
+
+  .wheels-images, .interior-images {
     position: relative;
-    z-index: 1;
+    z-index: 2;
   }
+  
+  .wheels-slide img, .interior-slide img {
+    position: relative;
+    width: 1000px;
+    height: 700px;
+    border-radius: 10px;
+    flex: 1;
+    padding-left: 0px;
+    margin-left: 0px;
+    align-items: left;
+  }
+  
+.car-slide,
+.wheels-slide {
+  display: none;
+}
+#wheels-1:checked ~ .wheels-images #FirstWheels,
+#wheels-2:checked ~ .wheels-images #SecondWheels,
+#wheels-3:checked ~ .wheels-images #ThirdWheels,
+#wheels-4:checked ~ .wheels-images #FourWheels,
+#interior-1:checked ~ .interior-images #FirstInterior,
+#interior-2:checked ~ .interior-images #SecondInterior,
+#interior-3:checked ~ .interior-images #ThirdInterior,
+#interior-4:checked ~ .interior-images #FourInterior,
+#interior-5:checked ~ .interior-images #FiveInterior {
+  display: block;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+
+
+
