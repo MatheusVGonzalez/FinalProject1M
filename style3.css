@@ -1,0 +1,94 @@
+#contact-form{
+    display: grid;
+    background-color: #3849e7;
+    grid-template-areas:
+        "heading heading"
+        "photo message"
+        "message message"
+        "contact contact";
+    justify-content: center;
+    align-content: center;
+    width: 40%;  
+    padding: 20px 20px 20px 20px; 
+    border-radius: 15px; 
+    gap: 10px;
+
+}
+
+
+nav {
+    grid-area: heading;
+    padding: 10px;
+    min-height: 50px;
+    background: white;
+    color: black;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    
+}
+
+nav a {
+    color: grey;
+    font-size: 20px;
+}
+
+nav > ul {
+    display: flex;
+    align-items: center; 
+    gap: 24px; 
+    height: 100%; 
+}
+
+.logo {
+    margin: 0px;
+    height: 60px;
+}
+nav img {
+    height: 30px;
+    width: auto;
+    padding-left: 80px;
+    margin-top: 12px;
+}
+
+nav > ul > li {
+    margin: 0;
+}
+
+nav > a {
+    vertical-align: bottom;
+}
+
+.user {
+    position: relative;
+    padding-left: 950px;
+    max-width: 30px;
+    height: auto;
+    
+}
+
+.user img {
+    max-width: 100px;
+    height: auto;
+}
+
+.message {
+    grid-area: message;
+    padding: 10px;
+    min-height: 50px;
+    background: white;
+    color: black;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.photo img{
+    grid-area: photo;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.contact img{
+    grid-area: contact;
+    max-width: 30px;
+    padding-right: 20px;
+    height: auto;
+}
