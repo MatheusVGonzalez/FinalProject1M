@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
 
     <title>Build</title>
 </head>
@@ -13,34 +14,224 @@
         <ul>
             <li class="logo">
                 <a href="index.html">
-                    <img src="logo.png" alt="Logo">
+                    <img src="images/logo.png" alt="Logo">
                 </a>
             </li>
             <li><a href="Models.html">Models</a></li>
             <li><a href="About.html">About</a></li>
             <li class="user">
                 <a href="Login.html"> 
-                    <img src="user.png" alt="User">
+                    <img src="images/user.png" alt="User">
                 </a>
             </li>            
         </ul>
     </nav>
-    <main>
-
+    <main class="BuildPrice">
         <div class="BuildNames">
-            <img src="BuildImage.png" alt="RS6 Background" class="Build">
-            <h2>2025 RS 6 Avant Performance</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio debitis accusantium rerum ut nam, ipsam illum sit modi minus vitae veniam enim, neque suscipit culpa! Aperiam voluptates quos blanditiis.</p>
+            <div class="image-slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <input type="radio" name="slider" id="slide5">
+            
+                <div class="slides">
+                    <div class="slide" id="s1">
+                        <img src="images/BuildImage.png" alt="RS6 View 1">
+                    </div>
+                    <div class="slide" id="s2">
+                        <img src="images/BuildImage2.png" alt="RS6 View 2">
+                    </div>
+                    <div class="slide" id="s3">
+                        <img src="images/BuildImage3.png" alt="RS6 View 3">
+                    </div>
+                    <div class="slide" id="s4">
+                        <img src="images/BuildImage4.png" alt="RS6 View 4">
+                    </div>
+                    <div class="slide" id="s5">
+                        <img src="images/BuildImage5.png" alt="RS6 View 5">
+                    </div>
+                </div>
+            
+                <div class="navigation-manual">
+                    <label for="slide1" class="manual-btn">O</label>
+                    <label for="slide2" class="manual-btn">O</label>
+                    <label for="slide3" class="manual-btn">O</label>
+                    <label for="slide4" class="manual-btn">O</label>
+                    <label for="slide5" class="manual-btn">O</label>
+                </div>
+            </div>            
+            <section class="trimline-section">
+                <h1>2025 RS 6 Avant performance</h1>
+                <h2>RS 6 Avant performance quattro tiptronic</h2>
+
+                <div class="step">Step 1 of 7</div>
+                <div class="section-title">Trimline and engine</div>
+
+                <div class="card">
+                    <h3>RS 6 Avant performance quattro tiptronic</h3>
+                    <div class="price">$151,840</div>
+
+                    <div class="performance">
+                        <b>3.4 seconds</b>
+                        <span>Acceleration 0-100 km/h</span>
+                    </div>
+                    <div class="performance">
+                        <b>250 km/h</b>
+                        <span>Top speed</span>
+                    </div>
+
+                    <div class="links">
+                        <a href="#">View key feature info</a><br>
+                        <a href="#">View tech specs</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="Fuel">
+            <label class="fuel-consumption">Fuel consumption combined: 14.3 l/100 km</label>
+        </div>
+        <div class="BuildColors">
+            <section class="trimline-section">
+                <div class="color-slider">
+                    <div class="color-selection">
+                      <input type="radio" name="car-color" id="color-grey" checked>
+                      <input type="radio" name="car-color" id="color-black">
+                      <input type="radio" name="car-color" id="color-white">
+                      <input type="radio" name="car-color" id="color-blue">
+                      <input type="radio" name="car-color" id="color-silver">
+                      <input type="radio" name="car-color" id="color-red">
+                      <input type="radio" name="car-color" id="color-daytona">
+                      <input type="radio" name="car-color" id="color-blackCristal">
+
+                  
+                      <div class="car-images">
+                        <div class="car-slide" id="grey">
+                          <img src="images/Nardo-Back.png" alt="Grey Car">
+                        </div>
+                        <div class="car-slide" id="black">
+                          <img src="images/Mythos.png" alt="Black Car">
+                        </div>
+                        <div class="car-slide" id="white">
+                          <img src="images/Glacier-Back.png" alt="White Car">
+                        </div>
+                        <div class="car-slide" id="blue">
+                          <img src="images/Blue-Back.png" alt="Blue Car">
+                        </div>
+                        <div class="car-slide" id="silver">
+                            <img src="images/silver-back.png" alt="Silver Car">
+                          </div>
+                          <div class="car-slide" id="red">
+                            <img src="images/red-back.png" alt="Red Car">
+                          </div>
+                          <div class="car-slide" id="daytona">
+                            <img src="images/daytona-back.png" alt="Daytona Car">
+                          </div>
+                          <div class="car-slide" id="blackCristal">
+                            <img src="images/BlackCristal-Back.png" alt="Black Cristal Car">
+                          </div>
+                        
+                      </div>
+
+                      <div class="color-content">
+                        <div class="step">Step 2 of 7</div>
+                        <div class="section-title">Exterior</div>
+                  
+                      <div class="color-buttons">
+                        <div class="color-option">
+                          <label for="color-grey" class="color-dot nardo-grey"></label>
+                          <span>Nardo Grey</span>
+                        </div>
+                        <div class="color-option">
+                          <label for="color-black" class="color-dot mythos-black"></label>
+                          <span>Mythos Black Metallic</span>
+                        </div>
+                        <div class="color-option">
+                            <label for="color-white" class="color-dot glacier-white"></label>
+                            <span>Glacier White Metallic</span>
+                            </div>
+                            <div class="color-option">
+                            <label for="color-blue" class="color-dot ascari-blue"></label>
+                            <span>Ascari Blue Metallic</span>
+                            </div>
+                            <div class="color-option">
+                              <label for="color-silver" class="color-dot silver"></label>
+                              <span>Florett Silver Metallic</span>
+                            </div>
+                            <div class="color-option">
+                              <label for="color-red" class="color-dot red"></label>
+                              <span>Grenadine Red Metallic</span>
+                            </div>
+                            <div class="color-option">
+                              <label for="color-daytona" class="color-dot daytona"></label>
+                              <span>Daytona Grey Pearl Effect</span>
+                            </div>
+                            <div class="color-option">
+                              <label for="color-crystal" class="color-dot crytal"></label>
+                              <span>Sebring Black Crystal Effect</span>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
+            </section>
         </div>
 
+        <div class="Fuel">
+            <label class="fuel-consumption">Fuel consumption combined: 14.3 l/100 km</label>
+        </div>
+
+        <div class="BuildWheels">
+            <section class="trimline2-section">
+                <div class="wheels-slider">
+                    <div class="color-selection">
+                      <input type="radio" name="car-color" id="wheels-1" checked>
+                      <input type="radio" name="car-color" id="wheels-2">
+                      <input type="radio" name="car-color" id="wheels-3">
+                      <input type="radio" name="car-color" id="wheels-4">
+                  
+                      <div class="car-images">
+                        <div class="car-slide" id="FirstWheels">
+                          <img src="images/FirstWheels.png" alt="First Wheels">
+                        </div>
+                        <div class="car-slide" id="SecondWheels">
+                          <img src="images/SecondWheels.png" alt="Second Wheels">
+                        </div>
+                        <div class="car-slide" id="ThirdWheels">
+                          <img src="images/ThirdWheels.png" alt="Third Wheels">
+                        </div>
+                        <div class="car-slide" id="FourWheels">
+                          <img src="images/FourWheels.png" alt="Fourth Wheels">
+                        </div>
+                        
+                      </div>
+
+                      <div class="color-content">
+                        <div class="step">Step 3 of 7</div>
+                        <div class="section-title">Wheels</div>
+                  
+                      <div class="wheels-buttons">
+                        <div class="wheels-option">
+                          <label for="wheels-1" class="wheels-dot wheels-1"></label>
+                          <span>21" 10-spoke Dynamic RS wheels</span>
+                        </div>
+                        <div class="wheels-option">
+                          <label for="wheels-2" class="wheels-dot wheels-2"></label>
+                          <span>22" 5-Y-spoke design, matte neodymium gold wheels</span>
+                        </div>
+                        <div class="wheels-option">
+                            <label for="wheels-3" class="wheels-dot wheels-3"></label>
+                            <span>22" 5-Y-spoke design, matte black wheels</span>
+                            </div>
+                            <div class="wheels-option">
+                            <label for="wheels-4" class="wheels-dot wheels-4"></label>
+                            <span>22" 5-Y-spoke design, matte grey wheels</span>
+                            </div>
+                      </div>
+                    </div>
+                  </div>  
+            </section>
+        </div>
     </main>
-    <footer>
-        <a href="index.html">2025 Audi RS 6 Avant performance </a>
-        <a href="#performance">Performance</a> 
-        <a href="#technology">Technology</a>
-        <a href="#design">Design</a> 
-        <a href="#technical-specs">Technical Specs</a>
-    </footer>
-    
 </body>
 </html>

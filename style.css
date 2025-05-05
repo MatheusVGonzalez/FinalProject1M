@@ -56,26 +56,6 @@ nav > a {
     z-index: -1;
 }
 
-.Build {
-    float: left;
-    clear: right;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60%;
-    height: 60vh;
-    object-fit: cover;
-}
-
-.BuildNames > p, .BuildNames > h2 {
-    float: right;
-    clear: left;
-    width: 35%;
-    font-size: 20px;
-    color: black;
-    z-index: 3;
-}
-
 
 main {
     position: relative;
@@ -314,6 +294,28 @@ input#slide15:checked ~ .slides3 {
     outline: none;
 }
 
+#specs-table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.title-specs{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    
+}
+tbody{
+    background-color: #f0f6f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
 #slide1:checked ~ .text-index .text1,
 #slide2:checked ~ .text-index .text2,
 #slide3:checked ~ .text-index .text3,
@@ -350,4 +352,45 @@ input#slide13:checked ~ .dots label[for="slide13"],
 input#slide14:checked ~ .dots label[for="slide14"],
 input#slide15:checked ~ .dots label[for="slide15"] {
     background-color: black;
+}
+
+
+
+/*BuildPricePage*/
+
+.BuildPrice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.BuildNames {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Build {
+    width: 70%;
+    border-radius: 8px;
+}
+
+.BuildText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.BuildText h2 {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+.BuildText p {
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
