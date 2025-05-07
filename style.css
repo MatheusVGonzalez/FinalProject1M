@@ -39,7 +39,9 @@ nav img {
 }
 
 nav > ul > li {
-    margin: 0; /* zera */
+    margin: 0;
+    display: flex;
+    align-self: center;
 }
 
 nav > a {
@@ -132,12 +134,11 @@ h2 {
     margin-top: 30px;
 }
 
-
 .spec {
     text-align: center;
-font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
+        
 .spec .label {
     font-size: 18px;
     color: #333;
@@ -373,6 +374,7 @@ input#slide15:checked ~ .dots label[for="slide15"] {
 }
 
 .Build {
+    display: flex;
     width: 70%;
     border-radius: 8px;
 }

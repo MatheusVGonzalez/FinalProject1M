@@ -8,6 +8,130 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
 
+    <style>
+        body{
+            overflow: hidden;
+        }
+
+        nav a {
+            color: grey;
+            font-size: 20px;
+        }
+        
+        nav > ul {
+            display: flex;
+            align-items: center; 
+            gap: 24px; 
+            height: 100%; 
+        }
+        
+        .logo {
+            margin: 0px;
+            height: 60px;
+        }
+        nav img {
+            height: 30px;
+            width: auto;
+            padding-left: 80px;
+            margin-top: 12px;
+        }
+
+        nav > ul > li {
+            margin: 0;
+        }
+        
+        nav > a {
+            vertical-align: bottom;
+        }
+        
+        .user {
+            position: relative;
+            padding-left: 950px;
+            max-width: 30px;
+            height: auto;
+        
+        }
+        
+        .user img {
+            max-width: 100px;
+            height: auto;
+        }
+        
+        footer {
+            position: -webkit-sticky;
+            position: sticky;
+            bottom: 0;
+            background-color: #1f1f1f;
+            color: white;
+            text-align: center;
+            min-height: 60px;
+            height: auto;
+            top: 0;
+            background-color: black;
+            z-index: 100;
+            display: flex;
+            width: 100%;
+            font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        
+        }
+        
+        .price-footer {
+            position: -webkit-sticky;
+            position: sticky;
+            bottom: 0;
+            background-color: #1f1f1f;
+            color: white;
+            text-align: center;
+            min-height: 60px;
+            height: auto;
+            top: 0;
+            background-color: black;
+            z-index: 100;
+            justify-content: space-around;
+            display: flex;
+            width: 100%;
+            font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        
+        }
+        
+        footer a {
+            color: white;
+            margin-left: 50px;
+            font-size: 17px;
+            padding-top: 15px;
+            text-align: center;
+        
+        }
+        
+        .button {
+            display: inline-block;
+            font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin-top: 10px;
+            margin-left: 100px;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            padding: 15px 30px;
+            border: 10px;
+        }
+        
+        .performance-specs {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            margin-top: 30px;
+        }
+        
+        .image-slider input {
+            display: none;
+        }
+        
+        .text-index .text {
+            display: none;
+            transition: opacity 0.3s ease-in-out;
+        }
+            
+
+    </style>
 </head>
 <body>
     <nav>
@@ -30,9 +154,12 @@
         <div class="photo">
             <img src="images/Me.png" alt="Matheus">
         </div>
-        <div class="message">
-            <h2>Matheus Verissimo Gonzalez <br><br></h2>
+        <header>
+            <h2>Matheus Verissimo Gonzalez <br></h2>
+            
+            <p>This project is about my Dream Car. Since I was a child, I have been fascinated by cars of all kinds, whether classic models or the latest innovations. I find it amazing how each piece fits together and can take you wherever you want. From design to mechanics, cars have always sparked my curiosity and imagination.<br> <br></p>
             <p>
+                <h3 style="font-weight: bold; font-size: 20px; font-style: italic;">About Me</h3>
                 Hey! My name is Matheus,
                 I'm a passionate tech enthusiast with a technical high school diploma in IT from UNIVAP – Brazil.  Web Developer with 1+ year of front-end and database experience, with strong knowledge of Apex, LWC, HTML, CSS, JavaScript, SQL, Python and Git. During my studies, I worked on impactful projects, including a full system developed for a senior care clinic, which helped me gain real-world experience early on.
 
@@ -40,7 +167,7 @@
 
                 <br><br>I'm also on the path to becoming a Salesforce Developer. I'm learning through Udemy courses and Salesforce's own Trailhead platform, where I've achieved the Mountaineer rank with 32 badges, 22,000 points +.
             </p>
-        </div>
+        </header>
         <div class="contact">
             <a href="https://www.instagram.com/matheus.vg_/">
                 <img src="images/instagram.png" alt="instagram" name="instagram"id="instagram">
@@ -53,8 +180,6 @@
                 <img src="images/email.png" alt="email" name="email" id="email">    
             </a>
             </div>
-            
-        
     </form>
 </body>
 </html>

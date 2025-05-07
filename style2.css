@@ -42,7 +42,7 @@ nav > ul > li {
     margin: 0;
 }
 
-nav > a {
+nav > a {   
     vertical-align: bottom;
 }
 
@@ -122,7 +122,7 @@ h2 {
     font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin-top: 10px;
     margin-left: 100px;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     color: black;
     padding: 15px 30px;
     border: 10px;
@@ -167,6 +167,8 @@ h2 {
     justify-content: center;
     gap: 40px;
 }
+
+
     .trimline-section {
         font-family: 'Fira Sans', sans-serif;
         color: #222;
@@ -427,9 +429,9 @@ h2 {
         opacity: 0;
         transition: opacity 0.5s ease;
       }
-      #color-grey:checked ~ .car-images #grey,
+      #color-grey:checked ~ .car-images #grey, /*if grey is checked, use the id grey and display it*/
       #color-black:checked ~ .car-images #black,
-      #color-white:checked ~ .car-images #white,
+      #color-white:checked ~ .car-images #white,    
       #color-blue:checked ~ .car-images #blue,
       #color-silver:checked ~ .car-images #silver,
       #color-red:checked ~ .car-images #red,
