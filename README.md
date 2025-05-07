@@ -1,3 +1,8 @@
+📸 Preview 📸
+
+![image](https://github.com/user-attachments/assets/040b0af2-7524-4c4e-b731-c56b494d87c6)
+
+
 🚗 Dream Car Website 🚗 
 
 Hey!
@@ -18,10 +23,6 @@ Practice and improve my skills with HTML and CSS, keeping in mind that the compa
 
 HTML5
 CSS3
-
-📸 Preview 📸
-
-![image](https://github.com/user-attachments/assets/040b0af2-7524-4c4e-b731-c56b494d87c6)
 
 🖥️ How to Run 🖥️ 
 
