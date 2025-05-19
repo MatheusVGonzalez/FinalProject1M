@@ -7,45 +7,42 @@
 }
 
 nav {
-    padding: 10px;
-    min-height: 50px;
+    padding: 0.5%;
+    min-height: 5%;
     background: white;
     color: black;
     font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 10vh;
     
 }
 
 nav a {
     color: grey;
-    font-size: 20px;
+    font-size: 1.1rem;
 }
 
 nav > ul {
     display: flex;
     align-items: center; 
-    gap: 24px; 
+    gap: 2rem;
     height: 100%; 
 }
 
-.logo {
-    margin: 0px;
-    height: 60px;
-}
 nav img {
-    height: 30px;
+    height: 2rem;
     width: auto;
-    padding-left: 80px;
-    margin-top: 12px;
+    padding-left: 2rem;
 }
 
-nav > ul > li {
-    margin: 0;
-    display: flex;
-    align-self: center;
+.user {
+    margin-left: auto; 
+    padding-right: 2rem;
 }
 
-nav > a {
-    vertical-align: bottom;
+.user img {
+    width: clamp(50px, 4vw, 60px); 
+    height: auto;
+    object-fit: contain;
 }
 
 .background {
@@ -64,18 +61,6 @@ main {
     min-height: 100vh;
 }
 
-.user {
-    position: relative;
-    padding-left: 950px;
-    max-width: 30px;
-    height: auto;
-    
-}
-
-.user img {
-    max-width: 100px;
-    height: auto;
-}
 
 footer {
     position: -webkit-sticky;
