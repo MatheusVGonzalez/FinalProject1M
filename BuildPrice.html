@@ -6,25 +6,31 @@
     <link rel="stylesheet" href="style2.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <title>Build</title>
 </head>
 <body>
     <nav>
-        <ul>
-            <li class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Logo">
-                </a>
-            </li>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Logo">
+            </a>
+
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+            <ul class="nav-links">
             <li><a href="Models.html">Models</a></li>
+            <li><a href="BuildPrice.html">Build & Price</a></li>
             <li><a href="about.html">About</a></li>
-            <li class="user">
-                <a href="Login.html"> 
-                    <img src="images/user.png" alt="User">
-                </a>
-            </li>            
-        </ul>
+            <li><a href="#">FAQ</a></li>
+            </ul>
+
+            <a href="Login.html" class="user">
+            <img src="images/user.png" alt="User">
+            </a>
+        </div>
     </nav>
     <main class="BuildPrice">
         <div class="BuildNames">

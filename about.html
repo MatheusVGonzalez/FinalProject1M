@@ -7,148 +7,30 @@
     <link rel="stylesheet" href="style3.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-    <style>
-        body{
-            overflow: hidden;
-        }
-
-        nav a {
-            color: grey;
-            font-size: 20px;
-        }
-        
-        nav > ul {
-            display: flex;
-            align-items: center; 
-            gap: 24px; 
-            height: 100%; 
-        }
-        
-        .logo {
-            margin: 0px;
-            height: 60px;
-        }
-        nav img {
-            height: 30px;
-            width: auto;
-            padding-left: 80px;
-            margin-top: 12px;
-        }
-
-        nav > ul > li {
-            margin: 0;
-        }
-        
-        nav > a {
-            vertical-align: bottom;
-        }
-        
-        .user {
-            position: relative;
-            padding-left: 950px;
-            max-width: 30px;
-            height: auto;
-        
-        }
-        
-        .user img {
-            max-width: 100px;
-            height: auto;
-        }
-        
-        footer {
-            position: -webkit-sticky;
-            position: sticky;
-            bottom: 0;
-            background-color: #1f1f1f;
-            color: white;
-            text-align: center;
-            min-height: 60px;
-            height: auto;
-            top: 0;
-            background-color: black;
-            z-index: 100;
-            display: flex;
-            width: 100%;
-            font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        
-        }
-        
-        .price-footer {
-            position: -webkit-sticky;
-            position: sticky;
-            bottom: 0;
-            background-color: #1f1f1f;
-            color: white;
-            text-align: center;
-            min-height: 60px;
-            height: auto;
-            top: 0;
-            background-color: black;
-            z-index: 100;
-            justify-content: space-around;
-            display: flex;
-            width: 100%;
-            font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        
-        }
-        
-        footer a {
-            color: white;
-            margin-left: 50px;
-            font-size: 17px;
-            padding-top: 15px;
-            text-align: center;
-        
-        }
-        
-        .button {
-            display: inline-block;
-            font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            margin-top: 10px;
-            margin-left: 100px;
-            background-color: rgb(255, 255, 255);
-            color: black;
-            padding: 15px 30px;
-            border: 10px;
-        }
-        
-        .performance-specs {
-            display: flex;
-            justify-content: center;
-            gap: 100px;
-            margin-top: 30px;
-        }
-        
-        .image-slider input {
-            display: none;
-        }
-        
-        .text-index .text {
-            display: none;
-            transition: opacity 0.3s ease-in-out;
-        }
-            
-
-    </style>
 </head>
 <body>
     <nav>
-        <ul>
-            <li class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Logo">
-                </a>
-            </li>
-            <li><a href="models.html">Models</a></li>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Logo">
+            </a>
+
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+            <ul class="nav-links">
+            <li><a href="Models.html">Models</a></li>
+            <li><a href="BuildPrice.html">Build & Price</a></li>
             <li><a href="about.html">About</a></li>
-            <li class="user">
-                <a href="Login.html"> 
-                    <img src="images/user.png" alt="User">
-                </a>
-            </li>            
-        </ul>
+            <li><a href="#">FAQ</a></li>
+            </ul>
+
+            <a href="Login.html" class="user">
+            <img src="images/user.png" alt="User">
+            </a>
+        </div>
     </nav>
     <form id="contact-form" action="/submit-path" method="post">
         <div class="photo">
