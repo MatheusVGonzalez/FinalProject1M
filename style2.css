@@ -208,6 +208,7 @@
      .audio-player audio {
          width: 60%;
     }
+    
 }
  main {
      position: relative;
@@ -554,6 +555,7 @@
      position: relative;
      z-index: 1;
 }
+
  .color-dot:hover {
      transform: scale(1.1);
 }
@@ -614,20 +616,26 @@
      align-items: center;
      gap: 10px;
 }
- .color-dot {
-     width: 20px;
-     height: 20px;
-     border-radius: 50%;
-     display: inline-block;
-     cursor: pointer;
+.color-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  box-sizing: border-box;
+  vertical-align: middle;
+  flex-shrink: 0; 
 }
  .wheels-dot, .interior-dot {
-     width: 20px;
-     height: 20px;
-     background-color: #000;
-     border-radius: 50%;
-     display: inline-block;
-     cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  box-sizing: border-box;
+  vertical-align: middle;
+  flex-shrink: 0; 
+  background-color: #000;
 }
  .wheels-dot:hover, .interior-dot:hover {
      transform: scale(1.1);
