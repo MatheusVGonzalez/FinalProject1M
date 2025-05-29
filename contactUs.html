@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleContact.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Audi</title>
@@ -30,6 +30,31 @@
             </a>
         </div>
     </nav>
-    
+    <main>
+        <div class="contact-container">
+            <div class="imagebg">
+                <img class="bg-contact"  src="images/bg-contact.jpeg" alt="RS6 Background">
+                <h1 class="contactUs">Contact Audi Canada</h1>
+            </div>
+            <form id="contact-form" action="/submit-path" method="post">
+                <div class="contactsNames">
+                    <label class="labelsContact" for="name">Name:</label>
+                    <input class ="inputContact" type="text" id="name" name="name" required>
+                    <label class="labelsContact" for="email">Email:</label>
+                    <input class ="inputContact" type="email" id="email" name="email" required>
+                    <label class="labelsContact" for="phone">Phone:</label>
+                    <input class ="inputContact" type="tel" id="phone" name="phone" required>
+                    <label class="labelsContact" for="model">Model:</label>
+                    <select id="model" name="model" required>
+                        <option value="Audi RS6">2025 RS 6 Avant Performance</option>
+                        <option value="Audi E-tronic">Audi E-tronic</option>
+                    </select>
+                </div>  
+                <label class="labelsMessage" for="message">Message:</label>
+                <textarea class ="inputMessage" id="message" name="message" required></textarea>
+                <button class="submitButton" type="submit">Submit</button>
+              </form>
+        </div>
+    </main>
 </body>
 </html>
