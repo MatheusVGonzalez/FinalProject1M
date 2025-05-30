@@ -214,8 +214,12 @@
      position: relative;
      min-height: 100vh;
 }
+.middle-footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
  footer {
-     position: -webkit-sticky;
      position: sticky;
      bottom: 0;
      background-color: #1f1f1f;
@@ -232,7 +236,6 @@
      font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
  .price-footer {
-     position: -webkit-sticky;
      position: sticky;
      bottom: 0;
      background-color: #1f1f1f;
@@ -332,7 +335,6 @@
      font-size: 23px;
      font-weight: normal;
      margin-bottom: 20px;
-     align-items: right;
      text-align: left;
 }
  .step-wheels, .step-interior {
@@ -344,7 +346,6 @@
      font-size: 23px;
      font-weight: normal;
      margin-bottom: 20px;
-     align-items: right;
      text-align: left;
 }
  .card {
