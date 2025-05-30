@@ -13,6 +13,7 @@ html, body {
 
 .nav-container {
     display: flex;
+    position: fixed;
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
@@ -159,6 +160,12 @@ html, body {
 
   .BuildText h2 {
     font-size: 24px;
+  }
+   .back-to-top {
+    bottom: 15px;
+    right: 15px;
+    font-size: 16px;
+    padding: 8px 12px;
   }
 }
 
@@ -511,4 +518,19 @@ input#slide15:checked ~ .dots label[for="slide15"] {
     color: #333;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+}
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: black;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 70%;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 10;
 }
