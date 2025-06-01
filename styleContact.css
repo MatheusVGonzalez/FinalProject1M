@@ -140,7 +140,7 @@ label {
   background-color: #800000;
 }
 
-/* Tablet */
+/* tablet */
 @media (max-width: 1024px) {
   .nav-links {
     gap: 1rem;
@@ -162,7 +162,7 @@ label {
 
 }
 
-/* Mobile */
+/* mobile */
 @media (max-width: 767px) {
   .nav-links {
     display: none;
